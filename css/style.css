@@ -1,0 +1,103 @@
+/* Importando a fonte Gowun Batang do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gowun Batang', serif;
+    background-color: #f0f0f0; /* Ajuste conforme a paleta tetraédrica */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4A90E2; /* Exemplo de cor da paleta */
+    color: #fff;
+    padding: 15px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Cor de destaque */
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 100px 20px 20px; /* Espaço para o cabeçalho fixo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        background-color: #4A90E2;
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        transition: left 0.3s ease;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+        cursor: pointer;
+       
+    }
+}
+
+
