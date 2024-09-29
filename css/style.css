@@ -100,6 +100,38 @@ main ul {
     margin: 20px 0;
 }
 
+/* Container para organizar as fotos e os nomes */
+.dev-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Estilo para cada desenvolvedor */
+.developer {
+    text-align: center;
+    max-width: 200px; /* Largura máxima de cada bloco */
+}
+
+/* Estilo para as fotos dos desenvolvedores */
+.developer img {
+    width: 100%;
+    max-width: 150px; /* Limita o tamanho máximo das fotos */
+    height: auto;
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 3px solid #4A90E2; /* Borda ao redor da foto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 10px;
+}
+
+/* Nome dos desenvolvedores */
+.developer p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
 
 
 
@@ -152,4 +184,13 @@ figcaption {
     font-size: 14px;
     margin-top: 10px;
     color: #666; 
+}
+
+.dev-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer {
+    margin-bottom: 20px;
 }
