@@ -170,6 +170,9 @@ main ul {
         width: 100%; 
     }
 }
+h1{
+    bottom: 5%;
+}
 .video-container iframe {
     position: absolute;
     top: 0;
