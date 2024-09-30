@@ -75,7 +75,7 @@ img {
     margin: 20px 0; 
 }
 
-main h2 {
+main h2{
     font-size: 24px; 
     margin: 20px 0; 
 }
@@ -90,6 +90,7 @@ main p {
 main ul {
     list-style: disc; 
     margin-left: 20px; 
+    margin-bottom: 50px;
 }
 
 .video-container {
@@ -112,17 +113,17 @@ main ul {
 /* Estilo para cada desenvolvedor */
 .developer {
     text-align: center;
-    max-width: 200px; /* Largura máxima de cada bloco */
+    max-width: 200px; 
 }
 
 /* Estilo para as fotos dos desenvolvedores */
 .developer img {
     width: 100%;
-    max-width: 150px; /* Limita o tamanho máximo das fotos */
+    max-width: 150px; 
     height: auto;
-    border-radius: 50%; /* Torna a imagem circular */
-    border: 3px solid #4A90E2; /* Borda ao redor da foto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 50%; 
+    border: 3px solid #4A90E2; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 10px;
 }
 
@@ -170,8 +171,8 @@ main ul {
         width: 100%; 
     }
 }
-h1{
-    bottom: 5%;
+main h1{
+    margin-top: 70px;
 }
 .video-container iframe {
     position: absolute;
